@@ -35,3 +35,39 @@ Generating a hot_take tweet in en about: cybersecurity tips...
 Attempting to post the tweet...
 Tweet posted successfully!
 View it at: https://twitter.com/user/status/1957502868438630833
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 5 tweets today.
+Generating a fun_fact tweet in ro about: cybersecurity tips...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1957554929096069134
+Tweet 1/5 posted. Waiting 224 minutes for the next one.
+Traceback (most recent call last):
+  File "/home/vlad/Desktop/twitter-bot/script.py", line 304, in <module>
+    run_bot()
+  File "/home/vlad/Desktop/twitter-bot/script.py", line 301, in run_bot
+    time.sleep(delay_in_seconds)
+KeyboardInterrupt
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 0 tweets today.
+No tweets scheduled for today. Exiting.
