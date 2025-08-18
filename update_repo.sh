@@ -3,6 +3,10 @@
 # Navigate to the project directory
 cd /home/vlad/Desktop/twitter-bot/
 
+# Check the remote URL to ensure it's using SSH
+echo "Checking Git remote URL..."
+git remote -v
+
 # Run the Python script and append the output to cron.log
 # The 2>&1 redirects standard error to standard output
 /usr/bin/python3 script.py >> cron.log 2>&1
