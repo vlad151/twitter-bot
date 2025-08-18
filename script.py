@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # A simple Twitter bot script using Python and the tweepy library.
 # This script scrapes articles from daily.dev for content and links.
 #
@@ -30,17 +32,21 @@ import time
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 
-# Load environment variables from .env.local using the full, absolute path.
-# This ensures the script can find the file regardless of the current working directory.
-try:
-    load_dotenv('/home/vlad/Desktop/twitter-bot/.env.local')
-except Exception as e:
-    print(f"Error loading .env.local file: {e}")
-    # You might want to exit here if the file is critical
-    
 # ---
 # 1. Configuration
 # ---
+
+# IMPORTANT: Use the full, absolute path to the .env.local file.
+# This ensures the script can find the file regardless of the current working directory.
+ENV_PATH = '/home/vlad/Desktop/twitter-bot/.env.local'
+
+if os.path.exists(ENV_PATH):
+    print(f"Loading environment variables from: {ENV_PATH}")
+    load_dotenv(ENV_PATH)
+else:
+    print(f"Error: The .env.local file was not found at {ENV_PATH}")
+    print("Please make sure the path is correct and the file exists.")
+    exit()
 
 # IMPORTANT: Set these API keys as environment variables on your system.
 # Replace with your actual keys from the Twitter developer portal and the Gemini API.
@@ -50,6 +56,24 @@ X_API_SECRET = os.getenv("X_API_SECRET")
 X_ACCESS_TOKEN = os.getenv("X_ACCESS_TOKEN")
 X_ACCESS_SECRET = os.getenv("X_ACCESS_SECRET")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+# ---
+# 1.1. Diagnostic Check (Added for troubleshooting)
+# ---
+print("\n--- Diagnostic Check ---")
+print(f"X_BEARER_TOKEN loaded: {bool(X_BEARER_TOKEN)}")
+print(f"X_API_KEY loaded: {bool(X_API_KEY)}")
+print(f"X_API_SECRET loaded: {bool(X_API_SECRET)}")
+print(f"X_ACCESS_TOKEN loaded: {bool(X_ACCESS_TOKEN)}")
+print(f"X_ACCESS_SECRET loaded: {bool(X_ACCESS_SECRET)}")
+print(f"GEMINI_API_KEY loaded: {bool(GEMINI_API_KEY)}")
+print("------------------------\n")
+
+if not all([X_BEARER_TOKEN, X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET, GEMINI_API_KEY]):
+    print("Error: One or more environment variables are missing after loading the file.")
+    print("Please check the .env.local file to ensure all keys are present and correctly formatted.")
+    exit()
+# End of Diagnostic Check
 
 # A more diverse and engaging list of topics the bot can tweet about.
 # The bot will select one of these topics randomly.
@@ -164,7 +188,7 @@ def generate_tweet_with_gemini(topic, tweet_type="standard", include_link=None, 
         elif tweet_type == "hot_take":
             prompt_template += "\n\nÎncepe tweet-ul cu o declarație fermă, bazată pe opinie (un 'hot take') despre subiect, care să stârnească o dezbatere. Folosește un emoji pentru a semnala opinia."
         if include_link:
-            prompt_template += f"\n\nInclude acest link la finalul tweet-ului, după conținut și hashtag-uri: {include_link}"
+            prompt_template += f"\n\nInclude acest link la finalul tweet-ului, după conținut și hashtag-uri: {link_to_include}"
     else: # Default to English
         prompt_template = base_prompt
 
@@ -277,8 +301,4 @@ def run_bot():
             time.sleep(delay_in_seconds)
 
 if __name__ == "__main__":
-    if not all([X_BEARER_TOKEN, X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET, GEMINI_API_KEY]):
-        print("Error: One or more environment variables are missing.")
-        print("Please ensure X_BEARER_TOKEN, X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET, and GEMINI_API_KEY are set.")
-    else:
-        run_bot()
+    run_bot()
