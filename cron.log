@@ -71,3 +71,47 @@ GEMINI_API_KEY loaded: True
 
 Scheduled to post 0 tweets today.
 No tweets scheduled for today. Exiting.
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 2 tweets today.
+Generating a standard tweet in en about: software engineering best practices...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1957686033824292922
+Tweet 1/2 posted. Waiting 128 minutes for the next one.
+Traceback (most recent call last):
+  File "/home/vlad/Desktop/twitter-bot/script.py", line 304, in <module>
+    run_bot()
+  File "/home/vlad/Desktop/twitter-bot/script.py", line 301, in run_bot
+    time.sleep(delay_in_seconds)
+KeyboardInterrupt
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 2 tweets today.
+Generating a hot_take tweet in ro about: tech career advice...
+Attempting to post the tweet...
+Error posting tweet: 429 Too Many Requests
+Too Many Requests
+Tweet 1/2 posted. Waiting 201 minutes for the next one.
+Generating a hot_take tweet in en about: startups and venture capital...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1957704500568859127
