@@ -136,3 +136,64 @@ Generating a hot_take tweet in en about: programming languages...
 Attempting to post the tweet...
 Error posting tweet: 403 Forbidden
 You are not permitted to perform this action.
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 2 tweets today.
+Generating a fun_fact tweet in en about: cybersecurity tips...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1957860224339001349
+Tweet 1/2 posted. Waiting 171 minutes for the next one.
+Traceback (most recent call last):
+  File "/home/vlad/Desktop/twitter-bot/script.py", line 304, in <module>
+    run_bot()
+  File "/home/vlad/Desktop/twitter-bot/script.py", line 301, in run_bot
+    time.sleep(delay_in_seconds)
+KeyboardInterrupt
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 5 tweets today.
+Generating a hot_take tweet in en about: tech trends...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 1/5 posted. Waiting 150 minutes for the next one.
+Generating a fun_fact tweet in en about: fullstack development...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1958054028895461542
+Tweet 2/5 posted. Waiting 147 minutes for the next one.
+Scraping daily.dev for a relevant article...
+No articles found on daily.dev with the specified selector.
+Generating a standard tweet in ro about: fullstack development...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 3/5 posted. Waiting 108 minutes for the next one.
+Generating a hot_take tweet in ro about: fullstack development...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 4/5 posted. Waiting 85 minutes for the next one.
+Generating a fun_fact tweet in en about: software engineering best practices...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1958140171808850067
