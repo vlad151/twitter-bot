@@ -327,3 +327,39 @@ Generating a fun_fact tweet in en about: launching products...
 Attempting to post the tweet...
 Tweet posted successfully!
 View it at: https://twitter.com/user/status/1959313852593516578
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 5 tweets today.
+Generating a fun_fact tweet in en about: programming languages...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1959465718233063785
+Tweet 1/5 posted. Waiting 148 minutes for the next one.
+Generating a fun_fact tweet in ro about: open source projects...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 2/5 posted. Waiting 151 minutes for the next one.
+Generating a fun_fact tweet in en about: programming languages...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 3/5 posted. Waiting 142 minutes for the next one.
+Generating a hot_take tweet in ro about: AI ethics...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1959577166858862815
+Tweet 4/5 posted. Waiting 132 minutes for the next one.
+Generating a hot_take tweet in en about: open source projects...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1959610570505699778
