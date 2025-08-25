@@ -363,3 +363,19 @@ Generating a hot_take tweet in en about: open source projects...
 Attempting to post the tweet...
 Tweet posted successfully!
 View it at: https://twitter.com/user/status/1959610570505699778
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 1 tweets today.
+Generating a fun_fact tweet in en about: launching products...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1959828118329340335
