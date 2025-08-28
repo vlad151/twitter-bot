@@ -421,3 +421,43 @@ Generating a standard tweet in ro about: programming languages...
 Attempting to post the tweet...
 Tweet posted successfully!
 View it at: https://twitter.com/user/status/1960631380380979253
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 6 tweets today.
+Generating a standard tweet in en about: tech trends...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 1/6 posted. Waiting 158 minutes for the next one.
+Generating a hot_take tweet in en about: launching products...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 2/6 posted. Waiting 118 minutes for the next one.
+Generating a fun_fact tweet in ro about: cybersecurity tips...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 3/6 posted. Waiting 105 minutes for the next one.
+Generating a standard tweet in ro about: AI ethics...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1961011618029912264
+Tweet 4/6 posted. Waiting 212 minutes for the next one.
+Generating a hot_take tweet in en about: cybersecurity tips...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1961065122543063209
+Tweet 5/6 posted. Waiting 111 minutes for the next one.
+Generating a hot_take tweet in ro about: AI ethics...
+Error calling Gemini API: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)
+Could not generate a tweet. Skipping this iteration.
