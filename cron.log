@@ -499,3 +499,33 @@ Generating a fun_fact tweet in en about: web development frameworks...
 Attempting to post the tweet...
 Tweet posted successfully!
 View it at: https://twitter.com/user/status/1961460187849461997
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 4 tweets today.
+Generating a standard tweet in en about: programming languages...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 1/4 posted. Waiting 214 minutes for the next one.
+Generating a standard tweet in ro about: data science...
+Error calling Gemini API: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=AIzaSyDg6NQiRo2gPdhgjLSdMsmcfVml7g53Ie0
+Could not generate a tweet. Skipping this iteration.
+Tweet 2/4 posted. Waiting 150 minutes for the next one.
+Generating a standard tweet in en about: AI ethics...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
+Tweet 3/4 posted. Waiting 60 minutes for the next one.
+Generating a standard tweet in en about: tech career advice...
+Attempting to post the tweet...
+Error posting tweet: 403 Forbidden
+You are not permitted to perform this action.
