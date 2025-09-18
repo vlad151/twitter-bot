@@ -1031,3 +1031,29 @@ Generating a hot_take tweet in en about: tech trends...
 Attempting to post the tweet...
 Error posting tweet: 403 Forbidden
 You are not permitted to perform this action.
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 3 tweets today.
+Generating a hot_take tweet in ro about: software engineering best practices...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1968525448993792178
+Tweet 1/3 posted. Waiting 181 minutes for the next one.
+Generating a hot_take tweet in en about: startups and venture capital...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1968571056119001576
+Tweet 2/3 posted. Waiting 78 minutes for the next one.
+Generating a fun_fact tweet in en about: AI ethics...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1968590861198917709
