@@ -1176,3 +1176,34 @@ Generating a fun_fact tweet in en about: web development frameworks...
 Attempting to post the tweet...
 Tweet posted successfully!
 View it at: https://twitter.com/user/status/1970187477483724982
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 4 tweets today.
+Generating a fun_fact tweet in en about: fullstack development...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1970337351864877518
+Tweet 1/4 posted. Waiting 124 minutes for the next one.
+Generating a standard tweet in en about: AI ethics...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1970368798801764576
+Tweet 2/4 posted. Waiting 83 minutes for the next one.
+Generating a fun_fact tweet in en about: fullstack development...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1970389900378730766
+Tweet 3/4 posted. Waiting 68 minutes for the next one.
+Generating a hot_take tweet in ro about: cybersecurity tips...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1970407221872796050
