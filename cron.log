@@ -1440,3 +1440,16 @@ Generating a hot_take tweet in ro about: startups and venture capital...
 Attempting to post the tweet...
 Error posting tweet: 403 Forbidden
 You are not permitted to perform this action.
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 0 tweets today.
+No tweets scheduled for today. Exiting.
