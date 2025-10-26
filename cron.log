@@ -1453,3 +1453,19 @@ GEMINI_API_KEY loaded: True
 
 Scheduled to post 0 tweets today.
 No tweets scheduled for today. Exiting.
+Loading environment variables from: /home/vlad/Desktop/twitter-bot/.env.local
+
+--- Diagnostic Check ---
+X_BEARER_TOKEN loaded: True
+X_API_KEY loaded: True
+X_API_SECRET loaded: True
+X_ACCESS_TOKEN loaded: True
+X_ACCESS_SECRET loaded: True
+GEMINI_API_KEY loaded: True
+------------------------
+
+Scheduled to post 1 tweets today.
+Generating a fun_fact tweet in ro about: the future of work...
+Attempting to post the tweet...
+Tweet posted successfully!
+View it at: https://twitter.com/user/status/1982311267537711337
